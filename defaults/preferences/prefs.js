@@ -1,0 +1,1 @@
+pref("extensions.selenium_ide_button.buttonGoTo", "sidebar");

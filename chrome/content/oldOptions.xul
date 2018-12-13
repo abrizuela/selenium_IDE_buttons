@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://selenium_ide_button/locale/options.dtd">
+
+<prefwindow id="selenium_ide_button-preferences" 
+				title="&preference_title;" 
+				xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane id="sib-options-pane" label="Selenium IDE Button">
+		<preferences>
+			<preference id="sib.buttonGoTo" name="extensions.selenium_ide_button.buttonGoTo" type="string"/>
+		</preferences>
+		<groupbox align="center">
+			<hbox>
+				<label control="sib.button_go_to" value="&preference_radio_label;"/>
+				<radiogroup id="sib.button_go_to" preference="sib.buttonGoTo">
+					<radio id="popup" label="Pop Up" value="popup"/>
+					<radio id="sidebar" label="Sidebar" value="sidebar"/>
+				</radiogroup>
+			</hbox>
+		</groupbox>
+	</prefpane>
+</prefwindow>

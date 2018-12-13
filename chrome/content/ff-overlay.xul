@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://selenium_ide_button/locale/overlay.dtd">
+
+<overlay id="selenium_ide_button-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <script type="application/x-javascript" src="chrome://selenium_ide_button/content/overlay.js"/>
+  
+  <stringbundleset id="stringbundleset">
+		<stringbundle id="sib-string-bundle" src="chrome://selenium_ide_button/locale/overlay.properties"/>
+	</stringbundleset>
+  
+  <!-- Firefox -->
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="sel_ide_button"/>
+	</toolbarpalette>
+  
+	<!-- button details -->
+	<toolbarbutton id="sel_ide_button" 
+		type="menu-button"
+		label="Selenium IDE Button"
+		tooltiptext="&sib.menu-button.tooltiptext;"
+		image="chrome://selenium_ide_button/content/selenium-ide-logo19.png"
+		oncommand="selenium_ide_button.onToolbarButtonCommand();"
+		class="toolbarbutton-1 chromeclass-toolbar-additional"
+		>
+		<menupopup>
+			<menuitem label="&sib.pu.label;"			oncommand="selenium_ide_button.popupCaller(); event.stopPropagation();"/>
+			<menuitem label="&sib.sb.label;"			oncommand="selenium_ide_button.sidebarCaller(); event.stopPropagation();"/>
+		</menupopup>
+	</toolbarbutton>
+
+</overlay>

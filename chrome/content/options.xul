@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE options SYSTEM "chrome://selenium_ide_button/locale/options.dtd">
+
+<vbox xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <setting pref="extensions.selenium_ide_button.buttonGoTo" type="radio" title="&preference_radio_label;">
+    <radiogroup id="sib.button_go_to">
+      <radio id="popup"   label="Pop Up"  value="popup"/>
+      <radio id="sidebar" label="Sidebar" value="sidebar"/>
+    </radiogroup>
+  </setting>
+</vbox>

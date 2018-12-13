@@ -1,0 +1,8 @@
+content	selenium_ide_button					chrome/content/
+
+locale	selenium_ide_button	en-US			chrome/locale/en-US/
+locale	selenium_ide_button	es-ES			chrome/locale/es-ES/
+
+overlay	chrome://browser/content/browser.xul			chrome://selenium_ide_button/content/ff-overlay.xul
+
+override chrome://selenium_ide_button/content/options.xul chrome://selenium_ide_button/content/oldOptions.xul application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion<=7.*
